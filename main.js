@@ -45,6 +45,8 @@ $(document).ready(function(){
     $("#hairyrow").append($('<td id = "hairyquantity" class = "quantity">1</td>'));
   });
 
+  function whole () {
+
     var hairycount = 0;
     $('#hairydawg').click(function (){
       hairycount++;
@@ -66,13 +68,35 @@ $(document).ready(function(){
       $('#packlequantity').html(+packlecount);
     });
     var chikagacount = 0;
-    $('#chikagadawg').click(function (){
+    $('#chikagadawg').click(function(){
       chikagacount++;
       $('#chikagaquantity').html(+chikagacount);
     });
+
     var shillycount = 0;
-    $('#shillydawg').click(function (){
+    $('#shillydawg').click(function(){
       shillycount++;
       $('#shillyquantity').html(+shillycount);
     });
+    var finalShilly = $('#shillyquantity').html();
+    var finalChikaga = $('#chikagaquantity').html();
+    var finalPackle = $('#packlequantity').html();
+    var finalWeiner = $('#weinerquantity').html();
+    var finalHairy = $('#hairyquantity').html();
+    var finalJalapeno = $('#jalapenoquantity').html();
+
+    function getSubtotal () {
+      var q5 = 0;
+      var q6 = 0;
+
+      q5 = (finalWeiner + finalHairy) * 5;
+      q6 = (finalyShilly + finalChikaga + finalJalapeno + finalPackle) * 6;
+      return q6 + q5;
+    }
+var finalNum = getSubtotal();
+
+finalNum = $('#subtotalNum')
+
+}//closing whole
+whole();
 });

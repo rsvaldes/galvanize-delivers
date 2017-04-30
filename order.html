@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" defer src="main.js"></script>
     <link rel="stylesheet" href="styles.css">
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
@@ -24,13 +24,16 @@
         <div class="col m12">
           <div id = "numbers" class = "hidden" valign = "bottom;">
             <tr>
-              <p class = "hidden" id = "subtotal" style = "line-height: 8px;">Subtotal</p>
+              <p class = "hidden" id = "subtotal" style = "line-height: 6px;">Subtotal &nbsp; <td id = "subtotalNum"></td></p>
+
             </tr>
             <tr>
-              <p class = "hidden" id = "tax" style = "line-height: 8px;">Tax</p>
+              <p class = "hidden" id = "tax" style = "line-height: 8px;">Tax &nbsp; <td id = "TaxNum"></td> </p>
+
             </tr>
             <tr>
-              <p class = "hidden" id = "total" style = "line-height: 8px;">Total</p>
+              <p class = "hidden" id = "total" style = "line-height: 8px;">Total  &nbsp; <td id = "totalNum"></td></p>
+
             </tr>
           </div>
 
@@ -45,6 +48,7 @@
                         <th class = "hidden">Dawg</th>
                         <th class = "hidden">Price</th>
                         <th class = "hidden">#</th>
+                        <th class = "hidden" id ="totals"></th>
 
 
                   </thead>
@@ -110,7 +114,8 @@
             </div>
         </div>
     </div>
-
+  
 </body>
+
 
 </html>
