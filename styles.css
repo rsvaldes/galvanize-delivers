@@ -8,6 +8,16 @@
   float:right;
 }
 
+#numbers{
+  font-size: 40px;
+  bottom: 0;
+  margin-bottom: 10%;
+  position: absolute;
+
+}
+
+
+
 .right {
   font-size: 40px;
   font-weight: bold;
@@ -31,8 +41,12 @@ body {
     font-family: 'Amatic SC', cursive;
 
 }
-.row {
+.trow {
   font-size: 34px;
+  line-height: 5px;
+}
+.hidden {
+  display: none;
 }
 
 
