@@ -6,7 +6,7 @@ $(document).ready(function(){
   $(function(){
       // var $select = $(".1-100");
       for (i=1;i<=100;i++){
-          $('.select').append($('<option></option>').val(i).html(i))
+          $('.select').append($('<option></option>').val(i).html(i));
       }
   });
 
@@ -60,5 +60,12 @@ $(document).ready(function(){
     $("#hairyrow").append('<td id = "hairyquantity"></td>');
     $('#hairyquantity').append($('#hairyselect'));
   });
+// function getSubTotal () {
+//   var q5 = $( '#hairyselect').val(); + $( "#weinerselect" ).val() * 5;
+//   var q6 = $( "#chikagaselect" ).val(); + $( "#jalapenoselect" ).val() +$( "#packleselect" ).val(); + $( "#shillyselect" ).val() * 6;
+//   return q5 + q6;
+// }
+// var finalNum = getSubTotal();
+
 
 });
