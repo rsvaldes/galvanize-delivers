@@ -4,10 +4,10 @@
   width: 100%;
   font-size: 20px;
 }
-h2 {
-
-  font-family: 'Amatic SC', cursive;
+.table {
+  float:right;
 }
+
 .right {
   font-size: 40px;
   font-weight: bold;
@@ -21,13 +21,18 @@ h2 {
   width: 100%;
 }
 
+
 body {
     background-image: url("weinerbackground.jpg");
     /*background-color: #cccccc;*/
     background-repeat: no-repeat;
     background-size:cover;
     height: 100%;
+    font-family: 'Amatic SC', cursive;
 
+}
+.row {
+  font-size: 34px;
 }
 
 
@@ -52,12 +57,10 @@ body {
   padding-left: 40%;
 
 }
-h1 {
-  text-align: center;
-  padding-top: 5%;
-  font-size: 600%;
-  font-family: 'Amatic SC', cursive;
-  font-weight: bold;
+.first {
+  font-size: 100px;
+  font-weight: bolder;
+  text-shadow: 5px 5px black;
 }
 
 h2 {
@@ -92,8 +95,4 @@ h2 {
   background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
-}
-
-html {
-  font-family: 'Amatic SC', cursive;
 }
